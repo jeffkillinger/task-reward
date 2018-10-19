@@ -4,7 +4,7 @@ class TotalPoints extends Component {
   render() {
     return (
       <div className="container m-3">
-        <h2>Total Points: <span>0</span></h2>
+        <h1>Total Points: <span>0</span></h1>
       </div>
     )
   }

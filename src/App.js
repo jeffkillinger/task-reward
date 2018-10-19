@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import TotalPoints from './components/TotalPoints';
 import AddTask from './components/AddTask';
-import AddReward from './components/AddReward'
+import AddReward from './components/AddReward';
+import TaskList from './components/TaskList';
+import RewardList from './components/RewardList';
 
 import './App.css';
 
@@ -14,8 +16,10 @@ class App extends Component {
         <div className="container">
           <TotalPoints />
           <h2>Tasks</h2>
+          <TaskList />
           <AddTask />
           <h2>Rewards</h2>
+          <RewardList />
           <AddReward />
         </div>
       </div>
