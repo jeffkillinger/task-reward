@@ -11,7 +11,12 @@ class AddTask extends Component {
     return (
       <div className="card">
         <div className="card-body">
-          <button type="button" class="btn btn-secondary">Add a task for today</button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+          >
+            Add a task for today
+          </button>
         </div>
       </div>
     );

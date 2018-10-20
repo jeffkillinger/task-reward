@@ -6,6 +6,9 @@ class Reward extends Component {
       <div className="card">
         <div className="card-body">
           Reward goes here
+          <button className="btn btn-danger">
+            Claim reward
+          </button>
         </div>
       </div>
     )
