@@ -5,7 +5,24 @@ class AddReward extends Component {
     return (
       <div className="card">
         <div className="card-body">
-          <button type="button" class="btn btn-secondary">Add a reward</button>
+          <form onSubmit={this.addNewReward}>
+            <input
+              type="text"
+              required
+              placeholder="New Reward Name"
+            />
+            <input
+              type="number"
+              required
+              placeholder="Point Cost"
+            />
+            <button
+              type="submit"
+              class="btn btn-secondary"
+            >
+              Add Reward
+            </button>
+          </form>
         </div>
       </div>
     );

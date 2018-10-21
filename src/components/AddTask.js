@@ -7,16 +7,36 @@ class AddTask extends Component {
     errors: {}
   }
 
+  addNewTask(event) {
+    event.preventDefault();
+    //get the text from the input
+    //get text from input
+    //generate new task in tasklist
+  }
+
   render () {
     return (
       <div className="card">
         <div className="card-body">
-          <button
-            type="button"
-            class="btn btn-secondary"
-          >
-            Add a task for today
-          </button>
+          <form onSubmit={this.addNewTask}>
+            <input
+              type="text"
+              required
+              placeholder="New Task Name"
+            />
+            <input
+              type="number"
+              required
+              placeholder="Point Value"
+            />
+            <button
+              type="submit"
+              class="btn btn-secondary"
+            >
+              Add Task
+            </button>
+          </form>
+
         </div>
       </div>
     );
