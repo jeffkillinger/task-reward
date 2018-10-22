@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import Task from './Task';
 
 class TaskList extends Component {
-  constructor() {
-    super();
-    this.state = {
+  state = {
       tasks: [
         {
           id: 1,
@@ -21,15 +19,17 @@ class TaskList extends Component {
           points: 75
         },
       ]
-    }
-  }
+    };
   render () {
     const { tasks } = this.state;
 
     return(
       <div className="m-3">
         {tasks.map(task => (
-          <h3>{tasks.name}</h3>
+          <Task
+            key={task.id}
+            task={task}
+          />
         ))}
       </div>
     )

@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Task extends Component {
   render () {
+    const { name, points } = this.props.task;
+
     return(
       <div className="card">
         <div className="card-body">
-          Task goes here
+          <h4>{name}</h4>
+          <p>{points}</p>
           <button className="btn btn-primary">
             Completed
           </button>
@@ -19,7 +23,7 @@ class Task extends Component {
 }
 
 Task.propTypes = {
-  // check naming conventions -- can i still use "task" and "points" here?
+  task: PropTypes.object.isRequired
 }
 
 export default Task;

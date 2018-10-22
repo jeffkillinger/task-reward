@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
 class AddReward extends Component {
+  addNewReward(event) {
+    event.preventDefault();
+    //get the text from the input
+
+    //generate new reward in rewardList
+  }
+
+
   render () {
     return (
       <div className="card">
@@ -18,7 +26,7 @@ class AddReward extends Component {
             />
             <button
               type="submit"
-              class="btn btn-secondary"
+              className="btn btn-secondary"
             >
               Add Reward
             </button>

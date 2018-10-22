@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 
 class AddTask extends Component {
-  state = {
-    task: '',
-    points: '',
-    errors: {}
-  }
 
   addNewTask(event) {
     event.preventDefault();
     //get the text from the input
-    //get text from input
+
     //generate new task in tasklist
   }
 
@@ -31,9 +26,11 @@ class AddTask extends Component {
             />
             <button
               type="submit"
-              class="btn btn-secondary"
+              className="btn btn-secondary"
+              onClick={}
             >
               Add Task
+              <i className="fa fa-plus"></i>
             </button>
           </form>
 
